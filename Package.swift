@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "Random",
+    name: "LazyRandom",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "Random",
-            targets: ["Random"]
+            name: "LazyRandom",
+            targets: ["LazyRandom"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Random"),
+            name: "LazyRandom"),
         .testTarget(
-            name: "RandomTests",
-            dependencies: ["Random"]
+            name: "LazyRandomTests",
+            dependencies: ["LazyRandom"]
         ),
     ]
 )
